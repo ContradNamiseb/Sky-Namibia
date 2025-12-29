@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyNamibia - Connecting Namibia & SADC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- TITLE AND HEADER SECTION -->
+    <header class="header">
+        <h1><i class="fas fa-plane"></i> SkyNamibia Airlines</h1>
+        <p class="subtitle">Connecting Namibia & Southern Africa</p>
+        <div class="student-info">
+            <strong>Contrad Namiseb</strong> |
+            <strong>Maurette Swart</strong> |
+            <strong>Ashley Beukes</strong>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-plane"></i>
+                SkyNamibia
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#live-flights">Live Flights</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="book-btn">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro" class="section">
+        <div class="intro-content">
+            <h2>Welcome to SkyNamibia Airlines</h2>
+            <p>
+                SkyNamibia Airlines is Namibia's premier regional carrier, proudly connecting
+                Windhoek with all major Namibian destinations and key SADC capitals. Our modern
+                fleet offers comfortable flights to stunning coastal cities, wildlife reserves,
+                and vibrant regional hubs. Experience the beauty of Namibia from 30,000 feet!
+            </p>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Connecting<br>Namibia & SADC</h1>
+            <p>Reliable flights across Namibia and Southern Africa. Your journey starts here.</p>
+            <div class="cta-buttons">
+                <a href="#live-flights" class="cta-primary">Track Live Flights</a>
+                <a href="#schedule" class="cta-secondary">View Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Flights Section - NAMIBIAN - SADC -->
+    <section id="live-flights" class="section">
+        <div class="live-flights">
+            <h2><i class="fas fa-plane-departure"></i> Live Flight Tracker</h2>
+            <div class="flights-grid">
+                <!-- WINDHOEK → LÜDERITZ (Namibian) -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">Flight SN101</div>
+                        <div class="flight-status status-on-time">On Time</div>
+                    </div>
+                    <div class="flight-route">
+                        <div class="airport">
+                            <span class="airport-code">WHK</span>
+                            <span class="airport-name">Windhoek</span>
+                        </div>
+                        <div class="flight-path">
+                            <i class="fas fa-plane"></i> ➤
+                        </div>
+                        <div class="airport">
+                            <span class="airport-code">L</span>
+                            <span class="airport-name">Lüderitz</span>
+                        </div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="detail">
+                            <span class="detail-value">08:45</span>
+                            <span class="detail-label">Departs</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">10:15</span>
+                            <span class="detail-label">Arrives</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">1h 30m</span>
+                            <span class="detail-label">Duration</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-65"></div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+                        <span>Gate: A3</span>
+                        <span>Domestic</span>
+                    </div>
+                </div>
+
+                <!-- WINDHOEK → WALVIS BAY (Namibian) -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">Flight SN156</div>
+                        <div class="flight-status status-boarding">Boarding</div>
+                    </div>
+                    <div class="flight-route">
+                        <div class="airport">
+                            <span class="airport-code">WHK</span>
+                            <span class="airport-name">Windhoek</span>
+                        </div>
+                        <div class="flight-path">
+                            <i class="fas fa-plane"></i> ➤
+                        </div>
+                        <div class="airport">
+                            <span class="airport-code">WB</span>
+                            <span class="airport-name">Walvis Bay</span>
+                        </div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="detail">
+                            <span class="detail-value">11:20</span>
+                            <span class="detail-label">Departs</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">12:25</span>
+                            <span class="detail-label">Arrives</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">1h 05m</span>
+                            <span class="detail-label">Duration</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-0"></div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+                        <span>Gate: A1</span>
+                        <span>Domestic</span>
+                    </div>
+                </div>
+
+                <!-- WINDHOEK → JOHANNESBURG (SADC Capital) -->
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">Flight SN247</div>
+                        <div class="flight-status status-on-time">On Time</div>
+                    </div>
+                    <div class="flight-route">
+                        <div class="airport">
+                            <span class="airport-code">WHK</span>
+                            <span class="airport-name">Windhoek</span>
+                        </div>
+                        <div class="flight-path">
+                            <i class="fas fa-plane"></i> ➤
+                        </div>
+                        <div class="airport">
+                            <span class="airport-code">JHB</span>
+                            <span class="airport-name">Johannesburg</span>
+                        </div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="detail">
+                            <span class="detail-value">12:30</span>
+                            <span class="detail-label">Departs</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">14:45</span>
+                            <span class="detail-label">Arrives</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">2h 15m</span>
+                            <span class="detail-label">Duration</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-35"></div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+                        <span>Gate: B12</span>
+                        <span>International</span>
+                    </div>
+                </div>
+
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">Flight SN319</div>
+                        <div class="flight-status status-delayed">Delayed 20m</div>
+                    </div>
+                    <div class="flight-route">
+                        <div class="airport">
+                            <span class="airport-code">WHK</span>
+                            <span class="airport-name">Windhoek</span>
+                        </div>
+                        <div class="flight-path">
+                            <i class="fas fa-plane"></i> ➤
+                        </div>
+                        <div class="airport">
+                            <span class="airport-code">HRE</span>
+                            <span class="airport-name">Harare</span>
+                        </div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="detail">
+                            <span class="detail-value">15:50</span>
+                            <span class="detail-label">Departs</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">17:40</span>
+                            <span class="detail-label">Arrives</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">1h 50m</span>
+                            <span class="detail-label">Duration</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-50"></div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+                        <span>Gate: B5</span>
+                        <span>International</span>
+                    </div>
+                </div>
+
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">Flight SN456</div>
+                        <div class="flight-status status-boarding">Boarding</div>
+                    </div>
+                    <div class="flight-route">
+                        <div class="airport">
+                            <span class="airport-code">WHK</span>
+                            <span class="airport-name">Windhoek</span>
+                        </div>
+                        <div class="flight-path">
+                            <i class="fas fa-plane"></i> ➤
+                        </div>
+                        <div class="airport">
+                            <span class="airport-code">CPT</span>
+                            <span class="airport-name">Cape Town</span>
+                        </div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="detail">
+                            <span class="detail-value">17:45</span>
+                            <span class="detail-label">Departs</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">20:30</span>
+                            <span class="detail-label">Arrives</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">2h 45m</span>
+                            <span class="detail-label">Duration</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-0"></div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+                        <span>Gate: B8</span>
+                        <span>International</span>
+                    </div>
+                </div>
+
+                <div class="flight-card">
+                    <div class="flight-header">
+                        <div class="flight-number">Flight SN523</div>
+                        <div class="flight-status status-on-time">On Time</div>
+                    </div>
+                    <div class="flight-route">
+                        <div class="airport">
+                            <span class="airport-code">GBE</span>
+                            <span class="airport-name">Gaborone</span>
+                        </div>
+                        <div class="flight-path">
+                            <i class="fas fa-plane"></i> ➤
+                        </div>
+                        <div class="airport">
+                            <span class="airport-code">WHK</span>
+                            <span class="airport-name">Windhoek</span>
+                        </div>
+                    </div>
+                    <div class="flight-details">
+                        <div class="detail">
+                            <span class="detail-value">18:15</span>
+                            <span class="detail-label">Departs</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">19:45</span>
+                            <span class="detail-label">Arrives</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">1h 30m</span>
+                            <span class="detail-label">Duration</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-90"></div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+                        <span>Gate: C3</span>
+                        <span>International</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flight Schedule Section -->
+    <section id="schedule" class="section">
+        <h2><i class="fas fa-calendar-alt"></i> Flight Schedule</h2>
+        <div class="schedule-tabs">
+            <button class="tab-btn active" onclick="showTab('today')">Today</button>
+            <button class="tab-btn" onclick="showTab('tomorrow')">Tomorrow</button>
+            <button class="tab-btn" onclick="showTab('week')">This Week</button>
+        </div>
+
+        <!-- Today Schedule -->
+        <div id="today" class="schedule-content active">
+            <div class="schedule-grid">
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN101</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">WHK ➤ L</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">08:45</div>
+                    </div>
+                    <div style="text-align: center;">1h 30m</div>
+                    <div style="text-align: center;"><span class="status">On Time</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN247</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">WHK ➤ JHB</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">12:30</div>
+                    </div>
+                    <div style="text-align: center;">2h 15m</div>
+                    <div style="text-align: center;"><span class="status">On Time</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tomorrow Schedule -->
+        <div id="tomorrow" class="schedule-content">
+            <div class="schedule-grid">
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN319</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">WHK ➤ HRE</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">15:50</div>
+                    </div>
+                    <div style="text-align: center;">1h 50m</div>
+                    <div style="text-align: center;"><span class="status">Scheduled</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN456</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">WHK ➤ CPT</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">17:45</div>
+                    </div>
+                    <div style="text-align: center;">2h 45m</div>
+                    <div style="text-align: center;"><span class="status">Scheduled</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section id="destinations" class="section">
+        <h2><i class="fas fa-map-marked-alt"></i> Popular Namibian Destinations</h2>
+        <div class="destinations-grid">
+            <!-- SOSSUSVLEI -->
+            <div class="destination-card">
+                <img src="images/sossusvlei.jpg" alt="Sossusvlei Dunes" class="destination-image">
+                <div class="destination-content">
+                    <h3>Sossusvlei</h3>
+                    <p class="destination-price">From N$1,299 • via WB</p>
+                    <a href="#" class="book-btn-small">Book Now</a>
+                </div>
+            </div>
+
+            <!-- ETOSHA -->
+            <div class="destination-card">
+                <img src="images/Elephants.jpg" alt="Etosha National Park" class="destination-image">
+                <div class="destination-content">
+                    <h3>Etosha</h3>
+                    <p class="destination-price">From N$1,499 • via OND</p>
+                    <a href="#" class="book-btn-small">Book Now</a>
+                </div>
+            </div>
+
+            <!-- SWAKOPMUND -->
+            <div class="destination-card">
+                <img src="images/swakopmund.jpg" alt="Swakopmund Beach" class="destination-image">
+                <div class="destination-content">
+                    <h3>Swakopmund</h3>
+                    <p class="destination-price">From N$899 • via WB</p>
+                    <a href="#" class="book-btn-small">Book Now</a>
+                </div>
+            </div>
+
+            <!-- RUNDU -->
+            <div class="destination-card">
+                <img src="images/kavango-river.jpg" alt="Rundu Kavango River" class="destination-image">
+                <div class="destination-content">
+                    <h3>Rundu</h3>
+                    <p class="destination-price">From N$1,199 • via RU</p>
+                    <a href="#" class="book-btn-small">Book Now</a>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="images/camps-bay.png" alt="Cape-Town-Beachfront" class="destination-image">
+                <div class="destination-content">
+                    <h3>Cape Town</h3>
+                    <p class="destination-price">From N$2,199 • via CPT</p>
+                    <a href="#" class="book-btn-small">Book Now</a>
+                </div>
+            </div>
+
+            <!-- KATIMA MULILO -->
+            <div class="destination-card">
+                <img src="images/katima.jpg" alt="Zambezi River Katima" class="destination-image">
+                <div class="destination-content">
+                    <h3>Katima Mulilo</h3>
+                    <p class="destination-price">From N$1,399 • via KM</p>
+                    <a href="#" class="book-btn-small">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNER SECTION -->
+    <section id="partners" class="partner-section">
+        <div class="partner-container">
+            <div class="partner-content">
+                <h2>Our Partner</h2>
+                <img src="images/emirates-logo.png" alt="Fly Emirates Logo" class="emirates-logo">
+                <p>Strategic partnership with <strong>Fly Emirates</strong> provides seamless connections to 150+ global
+                    destinations. Fly from Windhoek to Dubai and beyond on the world's most luxurious Boeing 787
+                    Dreamliner fleet.</p>
+                <a href="#" class="partner-cta">✈️ Fly with Emirates</a>
+            </div>
+            <div class="partner-image">
+                <img src="images/Hostes.jpg" alt="Emirates Boeing 787 Dreamliner" class="emirates-plane">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SkyNamibia Airlines</h3>
+                <p style="opacity: 0.8; margin-bottom: 1rem;">Proudly connecting Namibia and SADC since 2020. Your
+                    trusted regional airline.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <i class="fab fa-facebook-f" style="font-size: 1.5rem; color: #00d4ff;"></i>
+                    <i class="fab fa-twitter" style="font-size: 1.5rem; color: #00d4ff;"></i>
+                    <i class="fab fa-instagram" style="font-size: 1.5rem; color: #00d4ff;"></i>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">Book Flights</a>
+                <a href="#">Manage Booking</a>
+                <a href="#">Online Check-in</a>
+                <a href="#">Flight Status</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p style="opacity: 0.8;">+264 61 269 292</p>
+                <p style="opacity: 0.8;">flights@skynamibia.com.na</p>
+                <p style="opacity: 0.8;">24/7 Customer Support</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SkyNamibia Airlines. All rights reserved. | Made with ❤️ in Namibia</p>
+        </div>
+    </footer>
+</body>
+
+</html>
