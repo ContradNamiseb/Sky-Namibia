@@ -409,7 +409,109 @@
                 </div>
             </div>
         </div>
+
+        <!-- This Week Schedule -->
+        <div id="week" class="schedule-content">
+            <div class="schedule-grid">
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN101</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">WHK ➤ L</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">Mon 08:45</div>
+                    </div>
+                    <div style="text-align: center;">1h 30m</div>
+                    <div style="text-align: center;"><span class="status">Scheduled</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN247</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">WHK ➤ JHB</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">Tue 12:30</div>
+                    </div>
+                    <div style="text-align: center;">2h 15m</div>
+                    <div style="text-align: center;"><span class="status">Scheduled</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN319</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">WHK ➤ HRE</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">Wed 15:50</div>
+                    </div>
+                    <div style="text-align: center;">1h 50m</div>
+                    <div style="text-align: center;"><span class="status">Scheduled</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN456</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">WHK ➤ CPT</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">Thu 17:45</div>
+                    </div>
+                    <div style="text-align: center;">2h 45m</div>
+                    <div style="text-align: center;"><span class="status">Scheduled</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+                <div class="schedule-row">
+                    <div>
+                        <div style="font-weight: 700;">SN523</div>
+                        <div style="opacity: 0.8; font-size: 0.9rem;">GBE ➤ WHK</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 700; font-size: 1.1rem;">Fri 18:15</div>
+                    </div>
+                    <div style="text-align: center;">1h 30m</div>
+                    <div style="text-align: center;"><span class="status">Scheduled</span></div>
+                    <div style="text-align: right;">
+                        <button
+                            style="background: linear-gradient(45deg, #00d4ff, #0066cc); border: none; padding: 0.7rem 1.5rem; border-radius: 25px; color: white; font-weight: 600; cursor: pointer;">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <script>
+        // Tab switching functionality for flight schedule
+        function showTab(tabId) {
+            // Hide all schedule content
+            document.querySelectorAll('.schedule-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabId).classList.add('active');
+
+            // Add active class to the clicked button
+            event.target.classList.add('active');
+        }
+    </script>
 
     <!-- Popular Destinations Section -->
     <section id="destinations" class="section">

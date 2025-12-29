@@ -487,6 +487,11 @@ body {
     background: rgba(0, 212, 255, 0.2);
 }
 
+.tab-btn.active {
+    background: linear-gradient(45deg, #00d4ff, #0066cc);
+    border-color: transparent;
+}
+
 .schedule-content {
     display: none;
 }
