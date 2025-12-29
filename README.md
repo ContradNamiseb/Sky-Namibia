@@ -7,9 +7,9 @@ A modern, responsive airline website showcasing SkyNamibia Airlines - Namibia's 
 This is a student web design project that demonstrates a fully functional airline website with live flight tracking, destination showcases, and modern UI/UX design principles.
 
 **Created by:**
-- Contrad Namiseb (2024046641)
-- Maurette Swart (2024048786)
-- Ashley Beukes (2023041990)
+- Contrad Namiseb 
+- Maurette Swart 
+- Ashley Beukes 
 
 ## ✨ Features
 
