@@ -1,10 +1,10 @@
 # SkyNamibia Airlines ✈️
 
-A modern, responsive airline website showcasing SkyNamibia Airlines - Namibia's premier regional carrier connecting Windhoek with major Namibian destinations and SADC capitals.
+A modern ,simple, responsive airline landing-page showcasing SkyNamibia Airlines - Namibia's premier regional carrier connecting Windhoek with major Namibian destinations and SADC capitals.
 
 ## 📋 Project Overview
 
-This is a student web design project that demonstrates a fully functional airline website with live flight tracking, destination showcases, and modern UI/UX design principles.
+This is a student web design project that simulates a semi-functional airline website with live flight tracking, destination showcases, and modern UI/UX design principles.
 
 **Created by:**
 - Contrad Namiseb 
@@ -14,9 +14,9 @@ This is a student web design project that demonstrates a fully functional airlin
 ## ✨ Features
 
 ### 🛫 Live Flight Tracker
-- Real-time flight status displays
+- Simulates flight status displays
 - Flight cards with departure/arrival times
-- Visual progress indicators
+- Simulated visual flight progress indicators
 - Gate information and flight duration
 - Status badges (On Time, Boarding, Delayed)
 
@@ -39,7 +39,7 @@ This is a student web design project that demonstrates a fully functional airlin
 - Direct booking links
 
 ### 🤝 Partnerships
-- Emirates Airlines partnership showcase
+- Fictional Emirates Airlines partnership showcase
 - Global connectivity information
 - Partnership benefits
 
@@ -169,4 +169,5 @@ This is a student project created for educational purposes.
 ---
 
 **Made with ❤️ in Namibia** | © 2025 SkyNamibia Airlines
+
 
