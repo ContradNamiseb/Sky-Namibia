@@ -335,14 +335,14 @@
     <!-- Flight Schedule Section -->
     <section id="schedule" class="section">
         <h2><i class="fas fa-calendar-alt"></i> Flight Schedule</h2>
-        <div class="schedule-tabs">
-            <button class="tab-btn active" onclick="showTab('today')">Today</button>
-            <button class="tab-btn" onclick="showTab('tomorrow')">Tomorrow</button>
-            <button class="tab-btn" onclick="showTab('week')">This Week</button>
+        <div class="schedule-tabs" role="tablist" aria-label="Flight Schedule">
+            <button class="tab-btn active" onclick="showTab('today', this)" role="tab" aria-selected="true" aria-controls="today" id="tab-today">Today</button>
+            <button class="tab-btn" onclick="showTab('tomorrow', this)" role="tab" aria-selected="false" aria-controls="tomorrow" id="tab-tomorrow">Tomorrow</button>
+            <button class="tab-btn" onclick="showTab('week', this)" role="tab" aria-selected="false" aria-controls="week" id="tab-week">This Week</button>
         </div>
 
         <!-- Today Schedule -->
-        <div id="today" class="schedule-content active">
+        <div id="today" class="schedule-content active" role="tabpanel" aria-labelledby="tab-today">
             <div class="schedule-grid">
                 <div class="schedule-row">
                     <div>
@@ -380,7 +380,7 @@
         </div>
 
         <!-- Tomorrow Schedule -->
-        <div id="tomorrow" class="schedule-content">
+        <div id="tomorrow" class="schedule-content" role="tabpanel" aria-labelledby="tab-tomorrow">
             <div class="schedule-grid">
                 <div class="schedule-row">
                     <div>
@@ -418,7 +418,7 @@
         </div>
 
         <!-- This Week Schedule -->
-        <div id="week" class="schedule-content">
+        <div id="week" class="schedule-content" role="tabpanel" aria-labelledby="tab-week">
             <div class="schedule-grid">
                 <div class="schedule-row">
                     <div>
@@ -506,22 +506,24 @@
 
     <script>
         // Tab switching functionality for flight schedule
-        function showTab(tabId) {
+        function showTab(tabId, btn) {
             // Hide all schedule content
             document.querySelectorAll('.schedule-content').forEach(content => {
                 content.classList.remove('active');
             });
 
             // Remove active class from all tab buttons
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('active');
+            document.querySelectorAll('.tab-btn').forEach(button => {
+                button.classList.remove('active');
+                button.setAttribute('aria-selected', 'false');
             });
 
             // Show the selected tab content
             document.getElementById(tabId).classList.add('active');
 
             // Add active class to the clicked button
-            event.target.classList.add('active');
+            btn.classList.add('active');
+            btn.setAttribute('aria-selected', 'true');
         }
     </script>
 
