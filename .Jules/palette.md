@@ -9,3 +9,7 @@
 ## 2025-05-24 - Interactive Elements Must Be Interactive
 **Learning:** Social media icons implemented as pure `<i>` tags are invisible to keyboard users and screen readers. They look actionable but are dead pixels.
 **Action:** Always wrap icon-only interactive elements in `<a>` or `<button>` tags with `aria-label` to ensure they are reachable and announce their purpose.
+
+## 2025-05-25 - Accessible Tab Interfaces
+**Learning:** Custom tab implementations often rely on visual classes like `.active` but fail to communicate state to screen readers, leaving them unaware of the tabbed content structure.
+**Action:** Use the `role="tablist"`, `tab`, and `tabpanel` pattern with `aria-selected` and `aria-controls` to make tabs semantically rich and accessible.

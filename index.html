@@ -506,10 +506,11 @@
 
     <script>
         // Tab switching functionality for flight schedule
-        function showTab(tabId) {
-            // Hide all schedule content
+        function showTab(tabId, btn) {
+            // Hide all schedule content and update accessibility attributes
             document.querySelectorAll('.schedule-content').forEach(content => {
                 content.classList.remove('active');
+                content.hidden = true;
             });
 
             // Remove active class from all tab buttons and update aria-selected
@@ -519,7 +520,9 @@
             });
 
             // Show the selected tab content
-            document.getElementById(tabId).classList.add('active');
+            const selectedContent = document.getElementById(tabId);
+            selectedContent.classList.add('active');
+            selectedContent.hidden = false;
 
             // Add active class to the clicked button and update aria-selected
             // Use event.currentTarget to ensure we get the button even if a child element was clicked
