@@ -335,7 +335,7 @@
     <!-- Flight Schedule Section -->
     <section id="schedule" class="section">
         <h2><i class="fas fa-calendar-alt"></i> Flight Schedule</h2>
-        <div class="schedule-tabs" role="tablist" aria-label="Flight Schedule Periods">
+        <div class="schedule-tabs" role="tablist" aria-label="Flight Schedule">
             <button id="tab-today" class="tab-btn active" onclick="showTab('today')" role="tab" aria-selected="true" aria-controls="today">Today</button>
             <button id="tab-tomorrow" class="tab-btn" onclick="showTab('tomorrow')" role="tab" aria-selected="false" aria-controls="tomorrow">Tomorrow</button>
             <button id="tab-week" class="tab-btn" onclick="showTab('week')" role="tab" aria-selected="false" aria-controls="week">This Week</button>
@@ -512,7 +512,7 @@
                 content.classList.remove('active');
             });
 
-            // Remove active class from all tab buttons
+            // Remove active class from all tab buttons and update aria-selected
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('active');
                 btn.setAttribute('aria-selected', 'false');
@@ -521,9 +521,11 @@
             // Show the selected tab content
             document.getElementById(tabId).classList.add('active');
 
-            // Add active class to the clicked button
-            event.target.classList.add('active');
-            event.target.setAttribute('aria-selected', 'true');
+            // Add active class to the clicked button and update aria-selected
+            // Use event.currentTarget to ensure we get the button even if a child element was clicked
+            const activeBtn = event.currentTarget || event.target;
+            activeBtn.classList.add('active');
+            activeBtn.setAttribute('aria-selected', 'true');
         }
     </script>
 
