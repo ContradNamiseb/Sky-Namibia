@@ -336,9 +336,9 @@
     <section id="schedule" class="section">
         <h2><i class="fas fa-calendar-alt"></i> Flight Schedule</h2>
         <div class="schedule-tabs" role="tablist" aria-label="Flight Schedule">
-            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="today" id="tab-today" onclick="showTab('today', this)">Today</button>
-            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tomorrow" id="tab-tomorrow" onclick="showTab('tomorrow', this)">Tomorrow</button>
-            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="week" id="tab-week" onclick="showTab('week', this)">This Week</button>
+            <button id="tab-today" class="tab-btn active" onclick="showTab('today')" role="tab" aria-selected="true" aria-controls="today">Today</button>
+            <button id="tab-tomorrow" class="tab-btn" onclick="showTab('tomorrow')" role="tab" aria-selected="false" aria-controls="tomorrow">Tomorrow</button>
+            <button id="tab-week" class="tab-btn" onclick="showTab('week')" role="tab" aria-selected="false" aria-controls="week">This Week</button>
         </div>
 
         <!-- Today Schedule -->
@@ -380,7 +380,7 @@
         </div>
 
         <!-- Tomorrow Schedule -->
-        <div id="tomorrow" class="schedule-content" role="tabpanel" aria-labelledby="tab-tomorrow" hidden>
+        <div id="tomorrow" class="schedule-content" role="tabpanel" aria-labelledby="tab-tomorrow">
             <div class="schedule-grid">
                 <div class="schedule-row">
                     <div>
@@ -418,7 +418,7 @@
         </div>
 
         <!-- This Week Schedule -->
-        <div id="week" class="schedule-content" role="tabpanel" aria-labelledby="tab-week" hidden>
+        <div id="week" class="schedule-content" role="tabpanel" aria-labelledby="tab-week">
             <div class="schedule-grid">
                 <div class="schedule-row">
                     <div>
@@ -513,10 +513,10 @@
                 content.hidden = true;
             });
 
-            // Remove active class and aria-selected from all tab buttons
-            document.querySelectorAll('.tab-btn').forEach(b => {
-                b.classList.remove('active');
-                b.setAttribute('aria-selected', 'false');
+            // Remove active class from all tab buttons and update aria-selected
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
             });
 
             // Show the selected tab content
@@ -524,9 +524,11 @@
             selectedContent.classList.add('active');
             selectedContent.hidden = false;
 
-            // Add active class and aria-selected to the clicked button
-            btn.classList.add('active');
-            btn.setAttribute('aria-selected', 'true');
+            // Add active class to the clicked button and update aria-selected
+            // Use event.currentTarget to ensure we get the button even if a child element was clicked
+            const activeBtn = event.currentTarget || event.target;
+            activeBtn.classList.add('active');
+            activeBtn.setAttribute('aria-selected', 'true');
         }
     </script>
 
