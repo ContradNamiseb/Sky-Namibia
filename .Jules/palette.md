@@ -13,3 +13,7 @@
 ## 2025-05-25 - Accessible Tab Interfaces
 **Learning:** Custom tab implementations often rely on visual classes like `.active` but fail to communicate state to screen readers, leaving them unaware of the tabbed content structure.
 **Action:** Use the `role="tablist"`, `tab`, and `tabpanel` pattern with `aria-selected` and `aria-controls` to make tabs semantically rich and accessible.
+
+## 2025-05-26 - Invisible Focus Traps
+**Learning:** Using `opacity: 0` to hide interactive elements (like a "Back to Top" button) leaves them in the keyboard tab order, creating a "ghost" focus stop.
+**Action:** Always pair `opacity: 0` with `visibility: hidden` (or `display: none`) to properly remove hidden elements from the accessibility tree.
