@@ -13,3 +13,7 @@
 ## 2025-05-25 - Accessible Tab Interfaces
 **Learning:** Custom tab implementations often rely on visual classes like `.active` but fail to communicate state to screen readers, leaving them unaware of the tabbed content structure.
 **Action:** Use the `role="tablist"`, `tab`, and `tabpanel` pattern with `aria-selected` and `aria-controls` to make tabs semantically rich and accessible.
+
+## 2026-01-14 - Semantic Progress Indicators
+**Learning:** Visual-only progress bars (implemented as divs with width styles) deprive screen reader users of critical status information (e.g., flight completion percentage).
+**Action:** Always enhance custom progress indicators with `role="progressbar"`, `aria-valuenow`, `aria-valuemin`, `aria-valuemax`, and a descriptive `aria-label`.
