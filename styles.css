@@ -829,3 +829,42 @@ button:focus-visible,
 .cta-secondary:focus-visible {
     outline-offset: 4px;
 }
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(45deg, #00d4ff, #0066cc);
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 2000;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+    font-size: 1.2rem;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.6);
+}
+
+.back-to-top:focus-visible {
+    outline: 3px solid #00d4ff;
+    outline-offset: 4px;
+}

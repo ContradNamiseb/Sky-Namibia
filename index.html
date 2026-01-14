@@ -13,7 +13,7 @@
 <body>
     <a href="#intro" class="skip-link">Skip to main content</a>
     <!-- TITLE AND HEADER SECTION -->
-    <header class="header">
+    <header id="top" class="header" tabindex="-1">
         <h1><i class="fas fa-plane"></i> SkyNamibia Airlines</h1>
         <p class="subtitle">Connecting Namibia & Southern Africa</p>
         <div class="student-info">
@@ -652,6 +652,23 @@
             <p>© 2025 SkyNamibia Airlines. All rights reserved. | Made with ❤️ in Namibia</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#top" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script>
+        // Back to Top Button Visibility
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+    </script>
 </body>
 
 </html>
