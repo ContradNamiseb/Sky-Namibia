@@ -17,3 +17,11 @@
 ## 2025-05-26 - Invisible Focus Traps
 **Learning:** Using `opacity: 0` to hide interactive elements (like a "Back to Top" button) leaves them in the keyboard tab order, creating a "ghost" focus stop.
 **Action:** Always pair `opacity: 0` with `visibility: hidden` (or `display: none`) to properly remove hidden elements from the accessibility tree.
+
+## 2025-05-28 - Contextual Progress Bars
+**Learning:** Generic labels like "Flight progress" on multiple status indicators are confusing for screen reader users who lack visual context.
+**Action:** Include specific identifiers (like flight numbers) in `aria-label` for any status component that appears multiple times in a list.
+
+## 2025-05-28 - Fragile Inline Handlers
+**Learning:** Relying on global `event` objects in inline `onclick` handlers can be unreliable for targeting the triggering element.
+**Action:** Explicitly pass `this` to the handler function (e.g., `onclick="handleClick(this)"`) to ensure robust element reference.
