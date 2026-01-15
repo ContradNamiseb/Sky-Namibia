@@ -107,7 +107,7 @@
                             <span class="detail-label">Duration</span>
                         </div>
                     </div>
-                    <div class="progress-bar" role="progressbar" aria-label="Flight progress" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-label="Progress for Flight SN101" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-fill progress-65"></div>
                     </div>
                     <div
@@ -150,7 +150,7 @@
                             <span class="detail-label">Duration</span>
                         </div>
                     </div>
-                    <div class="progress-bar" role="progressbar" aria-label="Flight progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-label="Progress for Flight SN156" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-fill progress-0"></div>
                     </div>
                     <div
@@ -193,7 +193,7 @@
                             <span class="detail-label">Duration</span>
                         </div>
                     </div>
-                    <div class="progress-bar" role="progressbar" aria-label="Flight progress" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-label="Progress for Flight SN247" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-fill progress-35"></div>
                     </div>
                     <div
@@ -235,7 +235,7 @@
                             <span class="detail-label">Duration</span>
                         </div>
                     </div>
-                    <div class="progress-bar" role="progressbar" aria-label="Flight progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-label="Progress for Flight SN319" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-fill progress-50"></div>
                     </div>
                     <div
@@ -277,7 +277,7 @@
                             <span class="detail-label">Duration</span>
                         </div>
                     </div>
-                    <div class="progress-bar" role="progressbar" aria-label="Flight progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-label="Progress for Flight SN456" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-fill progress-0"></div>
                     </div>
                     <div
@@ -319,7 +319,7 @@
                             <span class="detail-label">Duration</span>
                         </div>
                     </div>
-                    <div class="progress-bar" role="progressbar" aria-label="Flight progress" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-label="Progress for Flight SN523" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                         <div class="progress-fill progress-90"></div>
                     </div>
                     <div
@@ -336,9 +336,9 @@
     <section id="schedule" class="section">
         <h2><i class="fas fa-calendar-alt"></i> Flight Schedule</h2>
         <div class="schedule-tabs" role="tablist" aria-label="Flight Schedule">
-            <button id="tab-today" class="tab-btn active" onclick="showTab('today')" role="tab" aria-selected="true" aria-controls="today">Today</button>
-            <button id="tab-tomorrow" class="tab-btn" onclick="showTab('tomorrow')" role="tab" aria-selected="false" aria-controls="tomorrow">Tomorrow</button>
-            <button id="tab-week" class="tab-btn" onclick="showTab('week')" role="tab" aria-selected="false" aria-controls="week">This Week</button>
+            <button id="tab-today" class="tab-btn active" onclick="showTab('today', this)" role="tab" aria-selected="true" aria-controls="today">Today</button>
+            <button id="tab-tomorrow" class="tab-btn" onclick="showTab('tomorrow', this)" role="tab" aria-selected="false" aria-controls="tomorrow">Tomorrow</button>
+            <button id="tab-week" class="tab-btn" onclick="showTab('week', this)" role="tab" aria-selected="false" aria-controls="week">This Week</button>
         </div>
 
         <!-- Today Schedule -->
@@ -514,9 +514,9 @@
             });
 
             // Remove active class from all tab buttons and update aria-selected
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('active');
-                btn.setAttribute('aria-selected', 'false');
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
             });
 
             // Show the selected tab content
@@ -525,10 +525,10 @@
             selectedContent.hidden = false;
 
             // Add active class to the clicked button and update aria-selected
-            // Use event.currentTarget to ensure we get the button even if a child element was clicked
-            const activeBtn = event.currentTarget || event.target;
-            activeBtn.classList.add('active');
-            activeBtn.setAttribute('aria-selected', 'true');
+            if (btn) {
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+            }
         }
     </script>
 
