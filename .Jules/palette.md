@@ -25,3 +25,7 @@
 ## 2025-05-28 - Fragile Inline Handlers
 **Learning:** Relying on global `event` objects in inline `onclick` handlers can be unreliable for targeting the triggering element.
 **Action:** Explicitly pass `this` to the handler function (e.g., `onclick="handleClick(this)"`) to ensure robust element reference.
+
+## 2025-05-29 - Decorative Noise
+**Learning:** Purely decorative icons (like plane icons in headers or arrows in flight paths) can clutter the audio experience for screen reader users if not explicitly hidden.
+**Action:** Use `aria-hidden="true"` on decorative icons and characters (e.g., `<i>` tags, arrows `➤`, emojis) to reduce cognitive load and improve content flow.
