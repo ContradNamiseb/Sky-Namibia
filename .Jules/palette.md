@@ -25,3 +25,7 @@
 ## 2025-05-28 - Fragile Inline Handlers
 **Learning:** Relying on global `event` objects in inline `onclick` handlers can be unreliable for targeting the triggering element.
 **Action:** Explicitly pass `this` to the handler function (e.g., `onclick="handleClick(this)"`) to ensure robust element reference.
+
+## 2025-05-28 - Noisy Decorative Characters
+**Learning:** Decorative Unicode characters (like ➤, ✈️) and icons announce themselves noisily to screen readers (e.g., "Black Rightwards Arrowhead"), confusing the actual content.
+**Action:** Always wrap decorative text characters in `<span aria-hidden="true">` and add the attribute to decorative icon tags.
