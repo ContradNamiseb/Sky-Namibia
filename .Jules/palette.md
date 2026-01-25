@@ -29,3 +29,7 @@
 ## 2025-05-28 - Noisy Decorative Characters
 **Learning:** Decorative Unicode characters (like ➤, ✈️) and icons announce themselves noisily to screen readers (e.g., "Black Rightwards Arrowhead"), confusing the actual content.
 **Action:** Always wrap decorative text characters in `<span aria-hidden="true">` and add the attribute to decorative icon tags.
+
+## 2025-05-29 - Missing Keyboard Affordance on Cards
+**Learning:** Interactive cards that use `:hover` to "lift" or transform often lack the same visual feedback for keyboard users, making the interface feel static and unresponsive to tab navigation.
+**Action:** Always pair `:hover` transform effects with `:focus-within` on the container to ensure keyboard users perceive the same interactivity.
