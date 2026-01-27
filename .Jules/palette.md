@@ -33,3 +33,7 @@
 ## 2025-05-29 - Missing Keyboard Affordance on Cards
 **Learning:** Interactive cards that use `:hover` to "lift" or transform often lack the same visual feedback for keyboard users, making the interface feel static and unresponsive to tab navigation.
 **Action:** Always pair `:hover` transform effects with `:focus-within` on the container to ensure keyboard users perceive the same interactivity.
+
+## 2025-05-30 - Standard Logo Navigation
+**Learning:** Users instinctively expect the site logo to function as a "Home" link. Static logos break this mental model and frustrate navigation.
+**Action:** Always wrap the brand logo in an anchor tag pointing to the home route (e.g., `<a href="#home">`), ensuring `text-decoration: none` preserves any custom text styling.
