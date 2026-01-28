@@ -33,3 +33,7 @@
 ## 2025-05-29 - Missing Keyboard Affordance on Cards
 **Learning:** Interactive cards that use `:hover` to "lift" or transform often lack the same visual feedback for keyboard users, making the interface feel static and unresponsive to tab navigation.
 **Action:** Always pair `:hover` transform effects with `:focus-within` on the container to ensure keyboard users perceive the same interactivity.
+
+## 2025-05-30 - Logo Accessibility & Styling
+**Learning:** Converting a static logo `div` to an anchor tag improves navigation but introduces default underlines that can break `background-clip: text` styling.
+**Action:** Always apply `text-decoration: none` when converting text-based logos to links to preserve the visual design while adding keyboard focusability.
