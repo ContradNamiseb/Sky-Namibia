@@ -33,3 +33,7 @@
 ## 2025-05-29 - Missing Keyboard Affordance on Cards
 **Learning:** Interactive cards that use `:hover` to "lift" or transform often lack the same visual feedback for keyboard users, making the interface feel static and unresponsive to tab navigation.
 **Action:** Always pair `:hover` transform effects with `:focus-within` on the container to ensure keyboard users perceive the same interactivity.
+
+## 2025-05-30 - Semantic Headings for Cards
+**Learning:** Implementing card titles (e.g., flight numbers) as generic `<div>` elements forces screen reader users to step through every single item in a list, making it tedious to scan content.
+**Action:** Use semantic headings (like `<h3>`) for card titles to create navigable landmarks, allowing users to jump between items using heading shortcuts.
