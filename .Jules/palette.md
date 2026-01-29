@@ -33,3 +33,7 @@
 ## 2025-05-29 - Missing Keyboard Affordance on Cards
 **Learning:** Interactive cards that use `:hover` to "lift" or transform often lack the same visual feedback for keyboard users, making the interface feel static and unresponsive to tab navigation.
 **Action:** Always pair `:hover` transform effects with `:focus-within` on the container to ensure keyboard users perceive the same interactivity.
+
+## 2026-01-26 - Prevent Duplicate Pull Requests
+**Learning:** Automated sessions may open duplicate PRs if previous ones are not reviewed, creating noise.
+**Action:** Before opening a PR, check for existing open PRs from "Palette" or on the same branch. If one exists, do not open a new one.
