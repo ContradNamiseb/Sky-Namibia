@@ -37,3 +37,14 @@
 ## 2025-05-30 - Semantic Headings for Cards
 **Learning:** Implementing card titles (e.g., flight numbers) as generic `<div>` elements forces screen reader users to step through every single item in a list, making it tedious to scan content.
 **Action:** Use semantic headings (like `<h3>`) for card titles to create navigable landmarks, allowing users to jump between items using heading shortcuts.
+## 2026-01-26 - Prevent Duplicate Pull Requests
+**Learning:** Automated sessions may open duplicate PRs if previous ones are not reviewed, creating noise.
+**Action:** Before opening a PR, check for existing open PRs from "Palette" or on the same branch. If one exists, do not open a new one.
+
+## 2025-05-30 - Focus Parity for Hover Effects
+**Learning:** Decorative hover effects (like animated underlines on nav links) are often missed for keyboard users, making the interface feel less polished.
+**Action:** Always mirror complex `:hover` styles (especially those on pseudo-elements like `::after`) with `:focus-visible` to ensure keyboard users get the same visual feedback.
+
+## 2025-05-30 - Logo Must Be A Link
+**Learning:** The main logo was implemented as a `div`, breaking the universal "Logo = Home" expectation.
+**Action:** Ensure the main brand logo is always wrapped in an `<a>` tag pointing to the homepage, with `text-decoration: none` to preserve styling.
