@@ -631,10 +631,66 @@ body {
     opacity: 0.7;
 }
 
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+    color: #00d4ff;
+}
+
+/* Hide mobile-only items by default */
+.mobile-only-nav {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    /* Hide desktop actions */
+    .nav-actions {
+        display: none;
+    }
+
+    /* Show mobile-only items */
+    .mobile-only-nav {
+        display: block;
+    }
+
     .nav-links {
         display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(12, 12, 26, 0.98);
+        backdrop-filter: blur(20px);
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        animation: slideDown 0.3s ease forwards;
+        z-index: 2000;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 
     .hero-content h1 {

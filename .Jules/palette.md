@@ -34,6 +34,13 @@
 **Learning:** Interactive cards that use `:hover` to "lift" or transform often lack the same visual feedback for keyboard users, making the interface feel static and unresponsive to tab navigation.
 **Action:** Always pair `:hover` transform effects with `:focus-within` on the container to ensure keyboard users perceive the same interactivity.
 
+## 2025-05-30 - Mobile Navigation & Stacking Contexts
+**Learning:** When adding a mobile dropdown menu to a fixed navbar, checking z-index against other fixed or relative elements (like hero sections) is critical to prevent content bleed-through.
+**Action:** Always verify overlay components with a visual screenshot test and explicitly set high z-index (e.g., 2000) on absolute positioned dropdowns.
+
+## 2025-05-30 - Adaptive Navigation Actions
+**Learning:** Key call-to-action buttons (like "Login") in the header often disappear when standard navigation is hidden on mobile.
+**Action:** Duplicate critical actions into the mobile menu list using a `.mobile-only` utility class to ensure they remain accessible on small screens.
 ## 2025-05-30 - Semantic Headings for Cards
 **Learning:** Implementing card titles (e.g., flight numbers) as generic `<div>` elements forces screen reader users to step through every single item in a list, making it tedious to scan content.
 **Action:** Use semantic headings (like `<h3>`) for card titles to create navigable landmarks, allowing users to jump between items using heading shortcuts.
