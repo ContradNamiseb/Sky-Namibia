@@ -1,8 +1,8 @@
-# SkyNamibia Airlines ✈️
+# SkyNamibia Airlines
 
 A modern ,simple, responsive airline landing-page showcasing SkyNamibia Airlines - Namibia's premier regional carrier connecting Windhoek with major Namibian destinations and SADC capitals.
 
-## 📋 Project Overview
+## Project Overview
 
 This is a student web design project that simulates a semi-functional airline website with live flight tracking, destination showcases, and modern UI/UX design principles.
 
@@ -11,22 +11,22 @@ This is a student web design project that simulates a semi-functional airline we
 - Maurette Swart 
 - Ashley Beukes 
 
-## ✨ Features
+## Features
 
-### 🛫 Live Flight Tracker
+### Live Flight Tracker
 - Simulates flight status displays
 - Flight cards with departure/arrival times
 - Simulated visual flight progress indicators
 - Gate information and flight duration
 - Status badges (On Time, Boarding, Delayed)
 
-### 📅 Flight Schedule
+### Flight Schedule
 - Interactive schedule tabs (Today, Tomorrow, This Week)
 - Detailed flight information
 - Quick booking options
 - Domestic and international routes
 
-### 🌍 Popular Destinations
+### Popular Destinations
 - Beautiful destination cards with images
 - Featured locations:
   - Sossusvlei (Dunes)
@@ -38,12 +38,12 @@ This is a student web design project that simulates a semi-functional airline we
 - Pricing and routing information
 - Direct booking links
 
-### 🤝 Partnerships
+### Partnerships
 - Fictional Emirates Airlines partnership showcase
 - Global connectivity information
 - Partnership benefits
 
-### 🎨 Design Highlights
+### Design Highlights
 - Modern gradient color scheme (Blue & Cyan theme)
 - Smooth animations and transitions
 - Glassmorphism effects
@@ -51,7 +51,7 @@ This is a student web design project that simulates a semi-functional airline we
 - Fixed navigation bar with smooth scrolling
 - Beautiful card-based layouts
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** - Semantic markup
 - **CSS3** - Advanced styling features including:
@@ -62,7 +62,7 @@ This is a student web design project that simulates a semi-functional airline we
   - Responsive design with media queries
 - **Vanilla JavaScript** (for tab functionality)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Web-Design-Last/
@@ -84,7 +84,7 @@ Web-Design-Last/
 └── README.md            # Project documentation
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. **Clone or Download** this repository
 2. **Open** `skynam.html` in any modern web browser
@@ -95,7 +95,7 @@ Web-Design-Last/
 - No server or build process required
 - No external dependencies needed
 
-## 🎯 Key Sections
+## Key Sections
 
 ### Navigation
 - Home
@@ -116,7 +116,7 @@ Web-Design-Last/
 - Windhoek (WHK) ↔ Cape Town (CPT)
 - Windhoek (WHK) ↔ Gaborone (GBE)
 
-## 🎨 Color Palette
+## Color Palette
 
 - **Primary Blue:** `#0066cc`
 - **Accent Cyan:** `#00d4ff`
@@ -126,7 +126,7 @@ Web-Design-Last/
 - **Info Blue:** `#3b82f6`
 - **Gold (Emirates):** `#ffd700`
 
-## 📱 Responsive Design
+## Responsive Design
 
 The website is fully responsive and optimized for:
 - Desktop (1400px+)
@@ -140,7 +140,7 @@ Mobile optimizations include:
 - Adjusted font sizes
 - Optimized card layouts
 
-## 🔧 Customization
+## Customization
 
 To customize the website:
 
@@ -153,13 +153,13 @@ To customize the website:
 
 This is a student project created for educational purposes.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Font Awesome for icons (referenced in HTML)
 - Namibian tourism imagery
 - Emirates Airlines branding (for educational demonstration)
 
-## 📞 Contact Information
+## Contact Information
 
 **SkyNamibia Airlines**
 - Phone: +264 61 269 292
@@ -169,5 +169,6 @@ This is a student project created for educational purposes.
 ---
 
 **Made with ❤️ in Namibia** | © 2025 SkyNamibia Airlines
+
 
 
