@@ -55,3 +55,7 @@
 ## 2025-05-30 - Logo Must Be A Link
 **Learning:** The main logo was implemented as a `div`, breaking the universal "Logo = Home" expectation.
 **Action:** Ensure the main brand logo is always wrapped in an `<a>` tag pointing to the homepage, with `text-decoration: none` to preserve styling.
+
+## 2025-05-31 - Actionable Contact Info
+**Learning:** Static contact information (phone/email) forces users to manually copy-paste, creating friction especially on mobile.
+**Action:** Always wrap phone numbers in `tel:` and emails in `mailto:` links with descriptive `aria-label` attributes to make them one-tap actions.
