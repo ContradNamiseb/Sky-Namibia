@@ -523,6 +523,24 @@ body {
     font-weight: 600;
 }
 
+.schedule-btn {
+    background: linear-gradient(45deg, #00d4ff, #0066cc);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.schedule-btn:hover,
+.schedule-btn:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
+
 /* Destinations - WITH IMAGES */
 .destinations-grid {
     display: grid;
@@ -900,6 +918,7 @@ button:focus-visible,
 .tab-btn:focus-visible,
 .book-btn:focus-visible,
 .book-btn-small:focus-visible,
+.schedule-btn:focus-visible,
 .partner-cta:focus-visible,
 .cta-primary:focus-visible,
 .cta-secondary:focus-visible {

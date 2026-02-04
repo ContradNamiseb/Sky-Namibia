@@ -59,3 +59,7 @@
 ## 2025-05-31 - Actionable Contact Info
 **Learning:** Static contact information (phone/email) forces users to manually copy-paste, creating friction especially on mobile.
 **Action:** Always wrap phone numbers in `tel:` and emails in `mailto:` links with descriptive `aria-label` attributes to make them one-tap actions.
+
+## 2025-05-31 - Inline Styles Block Interactivity
+**Learning:** Using inline `style` attributes on buttons (e.g., in lists) prevents the use of CSS pseudo-classes like `:hover` and `:focus-visible`, leading to a static, unresponsive UI.
+**Action:** Always extract repetitive inline styles to a CSS class to enable standard interaction states and maintain consistent code.
