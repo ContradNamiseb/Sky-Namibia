@@ -59,3 +59,7 @@
 ## 2025-05-31 - Actionable Contact Info
 **Learning:** Static contact information (phone/email) forces users to manually copy-paste, creating friction especially on mobile.
 **Action:** Always wrap phone numbers in `tel:` and emails in `mailto:` links with descriptive `aria-label` attributes to make them one-tap actions.
+
+## 2025-05-31 - Meaningful Emojis
+**Learning:** Emojis embedded in text (e.g., "Made with ❤️") can be ambiguous or ignored by screen readers if left raw.
+**Action:** Wrap meaningful emojis in `<span role="img" aria-label="[meaning]">` to ensure the sentiment is conveyed clearly.
